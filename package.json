@@ -20,19 +20,28 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.0.2",
+    "@testing-library/react": "^9.4.0",
+    "@types/jest": "^24.9.1",
     "@types/node": "^13.5.0",
     "@types/react": "^16.9.19",
     "@types/react-dom": "^16.9.5",
+    "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^2.17.0",
     "@typescript-eslint/parser": "^2.17.0",
     "babel-eslint": "^10.0.3",
+    "babel-jest": "^25.1.0",
+    "babel-preset-gatsby": "^0.2.27",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.18.0",
     "eslint-plugin-react-hooks": "^2.3.0",
     "gatsby-plugin-graphql-codegen": "^2.1.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^25.1.0",
     "prettier": "^1.19.1",
+    "react-test-renderer": "^16.12.0",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.4"
   },
@@ -43,14 +52,13 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "test": "jest",
     "lint": "eslint --ext .ts,.tsx src/",
     "lint:fix": "eslint --ext .ts,.tsx src/ --fix",
     "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
