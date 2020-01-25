@@ -5,14 +5,14 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { ReactNode } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import React, { ReactNode } from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from "./header"
-import "./layout.css"
+import Header from './header';
+import './layout.css';
 
 interface Props {
-  children: ReactNode
+  children: ReactNode;
 }
 
 const Layout: React.FC<Props> = ({ children }) => {
@@ -24,7 +24,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -44,7 +44,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         </footer>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
