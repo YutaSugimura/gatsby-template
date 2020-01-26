@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders component styles 1`] = `
+<div
+  css={
+    Object {
+      "map": undefined,
+      "name": "3h4kzc",
+      "next": undefined,
+      "styles": "
+  color: hotpink;
+",
+      "toString": [Function],
+    }
+  }
+>
+  Some hotpink text.
+  <div
+    css={
+      Object {
+        "map": undefined,
+        "name": "1081t4c",
+        "next": undefined,
+        "styles": "text-decoration:underline;",
+        "toString": [Function],
+      }
+    }
+  >
+    Some text
+  </div>
+</div>
+`;
+
+exports[`renders with correct styles 1`] = `
+.emotion-0 {
+  color: blue;
+}
+
+<button
+  className="emotion-0"
+>
+  emotion button
+</button>
+`;

@@ -27,6 +27,12 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-emotion`,
+      options: {
+        // Accepts all options defined by `babel-plugin-emotion` plugin.
+      },
+    },
     `gatsby-plugin-typescript`,
     {
       resolve: 'gatsby-plugin-graphql-codegen',

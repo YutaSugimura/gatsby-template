@@ -4,6 +4,8 @@ import { Link } from 'gatsby';
 import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
+import SimpleEmotion from '../components/emotionComponents/simple';
+import WithButton from '../components/emotionComponents/withEmotion';
 
 const IndexPage: React.FC = () => (
   <Layout>
@@ -13,6 +15,8 @@ const IndexPage: React.FC = () => (
     <p>Now go build something great.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
+      <SimpleEmotion />
+      <WithButton>This is a hotpink button</WithButton>
     </div>
     <Link to="/page-2/">Go to page 2</Link>
   </Layout>
