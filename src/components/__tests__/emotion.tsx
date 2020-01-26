@@ -1,10 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import serializer from 'jest-emotion';
 import SimpleEmotion from '../emotionComponents/simple';
 import WithButton from '../emotionComponents/withEmotion';
-
-expect.addSnapshotSerializer(serializer);
 
 test('renders with correct styles', () => {
   const tree = renderer

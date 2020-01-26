@@ -1,30 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders component styles 1`] = `
-<div
-  css={
-    Object {
-      "map": undefined,
-      "name": "3h4kzc",
-      "next": undefined,
-      "styles": "
+.emotion-1 {
   color: hotpink;
-",
-      "toString": [Function],
-    }
-  }
+}
+
+.emotion-0 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+.emotion-1 {
+  color: hotpink;
+}
+
+.emotion-0 {
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<div
+  className="emotion-1"
 >
   Some hotpink text.
   <div
-    css={
-      Object {
-        "map": undefined,
-        "name": "1081t4c",
-        "next": undefined,
-        "styles": "text-decoration:underline;",
-        "toString": [Function],
-      }
-    }
+    className="emotion-0"
   >
     Some text
   </div>
@@ -36,8 +36,12 @@ exports[`renders with correct styles 1`] = `
   color: blue;
 }
 
+.emotion-0 {
+  color: blue;
+}
+
 <button
-  className="emotion-0"
+  className="emotion-0 emotion-1"
 >
   emotion button
 </button>
