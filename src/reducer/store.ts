@@ -24,6 +24,6 @@ const setupStore = () => {
   });
 
   return store;
-}
+};
 
 export default setupStore;
