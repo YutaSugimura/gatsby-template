@@ -1870,6 +1870,12 @@ export type SitePageFieldsEnum =
   'pluginCreator___resolve' |
   'pluginCreator___name' |
   'pluginCreator___version' |
+  'pluginCreator___pluginOptions___pathToCreateStoreModule' |
+  'pluginCreator___pluginOptions___serialize___space' |
+  'pluginCreator___pluginOptions___serialize___isJSON' |
+  'pluginCreator___pluginOptions___serialize___unsafe' |
+  'pluginCreator___pluginOptions___cleanupOnClient' |
+  'pluginCreator___pluginOptions___windowKey' |
   'pluginCreator___pluginOptions___name' |
   'pluginCreator___pluginOptions___path' |
   'pluginCreator___pluginOptions___short_name' |
@@ -2065,6 +2071,12 @@ export type SitePluginFieldsEnum =
   'resolve' |
   'name' |
   'version' |
+  'pluginOptions___pathToCreateStoreModule' |
+  'pluginOptions___serialize___space' |
+  'pluginOptions___serialize___isJSON' |
+  'pluginOptions___serialize___unsafe' |
+  'pluginOptions___cleanupOnClient' |
+  'pluginOptions___windowKey' |
   'pluginOptions___name' |
   'pluginOptions___path' |
   'pluginOptions___short_name' |
@@ -2190,6 +2202,10 @@ export type SitePluginPackageJsonPeerDependenciesFilterListInput = {
 };
 
 export type SitePluginPluginOptions = {
+  pathToCreateStoreModule?: Maybe<Scalars['String']>,
+  serialize?: Maybe<SitePluginPluginOptionsSerialize>,
+  cleanupOnClient?: Maybe<Scalars['Boolean']>,
+  windowKey?: Maybe<Scalars['String']>,
   name?: Maybe<Scalars['String']>,
   path?: Maybe<Scalars['String']>,
   short_name?: Maybe<Scalars['String']>,
@@ -2203,6 +2219,10 @@ export type SitePluginPluginOptions = {
 };
 
 export type SitePluginPluginOptionsFilterInput = {
+  pathToCreateStoreModule?: Maybe<StringQueryOperatorInput>,
+  serialize?: Maybe<SitePluginPluginOptionsSerializeFilterInput>,
+  cleanupOnClient?: Maybe<BooleanQueryOperatorInput>,
+  windowKey?: Maybe<StringQueryOperatorInput>,
   name?: Maybe<StringQueryOperatorInput>,
   path?: Maybe<StringQueryOperatorInput>,
   short_name?: Maybe<StringQueryOperatorInput>,
@@ -2213,6 +2233,18 @@ export type SitePluginPluginOptionsFilterInput = {
   icon?: Maybe<StringQueryOperatorInput>,
   fileName?: Maybe<StringQueryOperatorInput>,
   pathCheck?: Maybe<BooleanQueryOperatorInput>,
+};
+
+export type SitePluginPluginOptionsSerialize = {
+  space?: Maybe<Scalars['Int']>,
+  isJSON?: Maybe<Scalars['Boolean']>,
+  unsafe?: Maybe<Scalars['Boolean']>,
+};
+
+export type SitePluginPluginOptionsSerializeFilterInput = {
+  space?: Maybe<IntQueryOperatorInput>,
+  isJSON?: Maybe<BooleanQueryOperatorInput>,
+  unsafe?: Maybe<BooleanQueryOperatorInput>,
 };
 
 export type SitePluginSortInput = {
