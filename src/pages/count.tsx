@@ -1,9 +1,9 @@
 import React, { useCallback } from 'react';
+import { Link } from 'gatsby';
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState } from '../reducer/store';
 import { increment } from '../reducer/actionReducer/counter';
 import IncrementButton from '../components/incrementButton';
-import { Link } from 'gatsby';
 
 const Count: React.FC = () => {
   const counter = useSelector((state: RootState) => state.counter.count);

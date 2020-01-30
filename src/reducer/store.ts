@@ -2,17 +2,18 @@ import {
   combineReducers,
   configureStore,
   getDefaultMiddleware,
+  Action,
 } from '@reduxjs/toolkit';
+import thunk, { ThunkAction } from 'redux-thunk';
 import logger from 'redux-logger';
 import counter from './actionReducer/counter';
 
 const rootReducer = combineReducers({
   counter: counter,
 });
-export type RootState = ReturnType<typeof rootReducer>;
 
 const setupStore = () => {
-  const middlewares = [...getDefaultMiddleware()];
+  const middlewares = [...getDefaultMiddleware(), thunk];
 
   if (process.env.NODE_ENV === `development`) {
     middlewares.push(logger);
@@ -26,4 +27,6 @@ const setupStore = () => {
   return store;
 };
 
+export type RootState = ReturnType<typeof rootReducer>;
+export type AppThunk = ThunkAction<void, RootState, null, Action<string>>;
 export default setupStore;
