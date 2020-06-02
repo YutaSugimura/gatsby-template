@@ -15,6 +15,7 @@ module.exports = {
   setupFiles: [`<rootDir>/loadershim.js`],
   setupFilesAfterEnv: [
     '<rootDir>/setup-test-env.js',
-    '<rootDir>/src/setupTests.ts',
+    '<rootDir>/src/setupTests.js',
   ],
+  snapshotSerializers: ['jest-emotion'],
 };

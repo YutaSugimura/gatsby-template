@@ -1,0 +1,4 @@
+
+```zsh
+gatsby new ${fileName}
+```

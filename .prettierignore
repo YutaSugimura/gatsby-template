@@ -1,6 +1,7 @@
 .cache
+node_modules
+public
+.babelrc
 package.json
 package-lock.json
-public
-node_modules
-gatsby-config.js
+yarn.lock

@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Count from '../../pages/count';
+import Count from '../../pages/page-2';
 
 const mockDispatch = jest.fn();
 

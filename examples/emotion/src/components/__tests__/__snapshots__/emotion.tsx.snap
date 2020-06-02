@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders component styles 1`] = `
+<div
+  css={
+    Object {
+      "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNpbXBsZS5qc3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBR2lCIiwiZmlsZSI6InNpbXBsZS5qc3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgY3NzIH0gZnJvbSAnQGVtb3Rpb24vY29yZSc7XG5cbmNvbnN0IHN0eWxlID0gY3NzYFxuICBjb2xvcjogaG90cGluaztcbmA7XG5cbmNvbnN0IFNvbWVDb21wb25lbnQgPSAoeyBjaGlsZHJlbiB9KSA9PiAoXG4gIDxkaXYgY3NzPXtzdHlsZX0+XG4gICAgU29tZSBob3RwaW5rIHRleHQuXG4gICAge2NoaWxkcmVufVxuICA8L2Rpdj5cbik7XG5cbmNvbnN0IGFub3RoZXJTdHlsZSA9IGNzcyh7XG4gIHRleHREZWNvcmF0aW9uOiAndW5kZXJsaW5lJyxcbn0pO1xuXG5jb25zdCBBbm90aGVyQ29tcG9uZW50ID0gKCkgPT4gPGRpdiBjc3M9e2Fub3RoZXJTdHlsZX0+U29tZSB0ZXh0PC9kaXY+O1xuXG5jb25zdCBTaW1wbGVDb21wb25lbnQgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFNvbWVDb21wb25lbnQ+XG4gICAgICA8QW5vdGhlckNvbXBvbmVudCAvPlxuICAgIDwvU29tZUNvbXBvbmVudD5cbiAgKTtcbn07XG5leHBvcnQgZGVmYXVsdCBTaW1wbGVDb21wb25lbnQ7XG4iXX0= */",
+      "name": "hpn981-style",
+      "styles": "color:hotpink;;label:style;",
+      "toString": [Function],
+    }
+  }
+>
+  Some hotpink text.
+  <div
+    css={
+      Object {
+        "map": "/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNpbXBsZS5qc3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBY3FCIiwiZmlsZSI6InNpbXBsZS5qc3giLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnO1xuaW1wb3J0IHsgY3NzIH0gZnJvbSAnQGVtb3Rpb24vY29yZSc7XG5cbmNvbnN0IHN0eWxlID0gY3NzYFxuICBjb2xvcjogaG90cGluaztcbmA7XG5cbmNvbnN0IFNvbWVDb21wb25lbnQgPSAoeyBjaGlsZHJlbiB9KSA9PiAoXG4gIDxkaXYgY3NzPXtzdHlsZX0+XG4gICAgU29tZSBob3RwaW5rIHRleHQuXG4gICAge2NoaWxkcmVufVxuICA8L2Rpdj5cbik7XG5cbmNvbnN0IGFub3RoZXJTdHlsZSA9IGNzcyh7XG4gIHRleHREZWNvcmF0aW9uOiAndW5kZXJsaW5lJyxcbn0pO1xuXG5jb25zdCBBbm90aGVyQ29tcG9uZW50ID0gKCkgPT4gPGRpdiBjc3M9e2Fub3RoZXJTdHlsZX0+U29tZSB0ZXh0PC9kaXY+O1xuXG5jb25zdCBTaW1wbGVDb21wb25lbnQgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFNvbWVDb21wb25lbnQ+XG4gICAgICA8QW5vdGhlckNvbXBvbmVudCAvPlxuICAgIDwvU29tZUNvbXBvbmVudD5cbiAgKTtcbn07XG5leHBvcnQgZGVmYXVsdCBTaW1wbGVDb21wb25lbnQ7XG4iXX0= */",
+        "name": "1k2ljmz-anotherStyle",
+        "styles": "text-decoration:underline;;label:anotherStyle;",
+        "toString": [Function],
+      }
+    }
+  >
+    Some text
+  </div>
+</div>
+`;
+
+exports[`renders with correct styles 1`] = `
+.emotion-0 {
+  color: blue;
+}
+
+.emotion-0 {
+  color: blue;
+}
+
+<button
+  className="emotion-0 emotion-1"
+>
+  emotion button
+</button>
+`;

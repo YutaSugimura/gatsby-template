@@ -1,16 +1,13 @@
-import React, { ReactNode } from 'react';
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core';
+import { jsx } from '@emotion/core';
+import React from 'react';
+import { css } from '@emotion/core';
 
 const style = css`
   color: hotpink;
 `;
 
-interface Props {
-  children: ReactNode;
-}
-
-const SomeComponent: React.FC<Props> = ({ children }) => (
+const SomeComponent = ({ children }) => (
   <div css={style}>
     Some hotpink text.
     {children}

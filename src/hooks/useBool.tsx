@@ -1,12 +1,18 @@
 import { useState } from 'react';
 
-const useBool = () => {
+interface Result {
+  bool: boolean;
+  setTrue: () => void;
+  setFalse: () => void;
+}
+
+const useBool = (): Result => {
   const [bool, setBool] = useState(false);
-  const setTrue = () => {
+  const setTrue = (): void => {
     setBool(true);
   };
 
-  const setFalse = () => {
+  const setFalse = (): void => {
     setBool(false);
   };
 
