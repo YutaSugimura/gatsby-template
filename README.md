@@ -3,9 +3,11 @@
 ## Examples
 
 - redux
-  - [redux-toolkit](https://github.com/YutaSugimura/gatsby-template/tree/master/examples/redux-toolkit)
+  - [redux-toolkit](https://github.com/YutaSugimura/gatsbyjs-template/tree/master/examples/redux-toolkit)
 - ui
-  - [emotion](https://github.com/YutaSugimura/gatsby-template/tree/master/examples/emotion)
+  - [emotion](https://github.com/YutaSugimura/gatsbyjs-template/tree/master/examples/emotion)
+- cms
+  - [notion-blog](https://github.com/YutaSugimura/gatsbyjs-template/tree/master/examples/notion-blog)
 
 ## References
 
