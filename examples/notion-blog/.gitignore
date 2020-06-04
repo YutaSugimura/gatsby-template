@@ -1,0 +1,11 @@
+node_modules
+yarn-error.log
+lib
+tmp
+.DS_Store
+public
+.cache
+
+.env.development
+.env.production
+.now

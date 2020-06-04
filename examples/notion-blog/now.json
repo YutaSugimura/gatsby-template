@@ -1,0 +1,7 @@
+{
+  "build": {
+    "env": {
+      "ROOT_PAGE_ROOT": ""
+    }
+  }
+}
