@@ -16,7 +16,7 @@
     "bulma": "^0.8.2",
     "gatsby": "^2.21.33",
     "gatsby-source-notionso": "^1.1.6",
-    "highlight.js": "^9.18.1",
+    "highlight.js": "^10.4.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
